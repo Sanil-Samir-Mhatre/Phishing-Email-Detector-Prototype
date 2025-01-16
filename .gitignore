@@ -1,0 +1,62 @@
+# Python bytecode files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Flask-specific files
+instance/
+*.sqlite3
+*.db
+
+# Environment variables and sensitive files
+.env
+*.env
+secrets.json
+keys.json
+certificates/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.virtualenv/
+.venv/
+
+# Logs and debug files
+*.log
+*.out
+*.err
+
+# PyCharm IDE settings
+.idea/
+
+# Jupyter Notebook checkpoints (if using notebooks for prototyping)
+.ipynb_checkpoints/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Dependency directories
+*.egg-info/
+.eggs/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Testing and coverage
+.coverage
+*.cover
+.hypothesis/
+.pytest_cache/
+.tox/
+
+# Build and distribution files
+build/
+dist/
+*.egg
+*.whl
+
+# Cache files
+*.cache
+.cache/
