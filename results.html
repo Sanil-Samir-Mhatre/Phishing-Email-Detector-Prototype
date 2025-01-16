@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Detection Results</title>
+</head>
+<body>
+    <h1>Detection Results</h1>
+    <h3>Email Details</h3>
+    <p><strong>Subject:</strong> {{ email.Subject }}</p>
+    <p><strong>From:</strong> {{ email.From }}</p>
+    <p><strong>To:</strong> {{ email.To }}</p>
+    <p><strong>Date:</strong> {{ email.Date }}</p>
+
+    <h3>Phishing Flags</h3>
+    <ul>
+    {% for key, value in flags.items() %}
+        <li><strong>{{ key }}:</strong> {{ 'Yes' if value else 'No' }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
